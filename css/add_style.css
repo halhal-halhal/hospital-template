@@ -1,0 +1,352 @@
+/**
+/*  #Globalnav-area
+/* ==========================================*/
+header #globalnav-area {
+    width: 100%;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    font-size: 120%;
+    height: 50px;
+    z-index: 900;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    word-break: break-all;
+}
+
+#globalnav {
+    height: 50px;
+    width: 100%;
+    margin: 0.5em auto;
+    word-break: break-all;
+}
+#globalnav ul{
+  list-style-type: none;
+  display: inline;
+  margin: 0 auto;
+}
+
+#globalnav li{
+  list-style-type: none;
+  width: auto;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+}
+
+#globalnav li.ln00:hover *{
+  background-color: rgb(189, 189, 189);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln01:hover *{
+  background-color: rgb(128, 208, 237);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln02:hover *{
+  background-color: rgb(34, 25, 135);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln03:hover *{
+  background-color: rgb(241, 66, 192);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln04:hover *{
+  background-color: rgb(173, 218, 122);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln05:hover *{
+  background-color: rgb(181, 142, 40);
+  color: white;
+  text-decoration: none;
+}
+
+/**
+/*  #Localnav-area
+/* ==========================================*/
+header #localnav-area {
+    width: 100%;
+    position: fixed;
+    top: 132px;
+    font-size: 90%;
+    left: 0;
+    height: 45px;
+    z-index: 900;
+    text-align-last: center;
+    margin: 0  auto;
+    background-color: rgb(238, 234, 233);
+    word-break: break-all;
+  }
+
+#localnav {
+    height: 45px;
+    width: 100%;
+    margin: 1em auto;
+    word-break: break-all;
+}
+#localnav ul{
+  list-style-type: none;
+  margin: auto;
+  display: inline;
+}
+
+#localnav li{
+  background-image:url("http://placehold.jp/cc9999/cc9999/16x16.png");
+  background-repeat:no-repeat;
+  background-position:0px 0px;
+  display: inline;
+  padding: 0 1.3em;
+}
+
+/**
+/*  indxbox
+/*             */
+
+.indexbox{
+  margin-top: 15px;
+}
+
+.indexbox div{
+  margin: 10px 0;
+}
+
+.indexbox img:hover{
+  filter:alpha(opacity=50);
+  opacity:0.5;
+  transition:0.75s ;
+}
+
+.indexbox img {
+	transition-duration: 1.0s ;	/* 秒数 = 1.0秒 */
+}
+
+
+/*
+* content-head
+*       */
+.content-head{
+  margin-bottom: 10px;
+}
+
+.content-head ul{
+  list-style-type: none;
+  float: right;
+  display: inline-block;
+}
+
+.content-head li{
+  float: left;
+  margin-left: 1em;
+  text-align: right;
+  display: inline-block;
+}
+
+/*
+* content-menu
+*         */
+div.content-menu{
+  margin: 0;
+}
+
+div.content-menu ul{
+  list-style-type: none;
+  float: left;
+  width: 100%;
+  height: 3em;
+  margin-bottom: 40px;
+  display: inline-block;
+  background-color: rgb(4, 4, 22);
+}
+
+.content-menu ul li{
+  float: left;
+  height: 3em;
+  color: white;
+  margin-left: 0;
+  margin-right: 1px;
+background-color: rgb(22, 39, 97);
+  padding: 0.5em 2em;
+  display: block;
+    width: 16.4%;
+}
+
+
+/*
+*  message-area
+*       */
+div.message-area{
+  background-color: rgb(233, 233, 233);
+  margin-top: 7em;
+
+}
+.message {
+  width: 90%;
+  margin: auto;
+}
+.message h3{
+  padding-top: 1em;
+  color: rgb(59, 145, 187);
+  width: 100%;
+  border-bottom: 2px dotted rgb(59, 145, 187);
+  margin-bottom: 1em;
+}
+.message h4{
+  font-weight: bolder;
+}
+
+
+/*
+*   requirements
+*   */
+.requirements-area{
+  background-color: rgb(233, 233, 233);
+}
+.requirements{
+  width: 90%;
+  margin:auto;
+  padding-bottom: 2em;
+}
+.requirements h3{
+  padding-top: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.requirements h4.line{
+  font-weight: bold;
+  margin-top:0.5em;
+  color: rgb(16, 13, 122);
+padding-bottom:0.5em;
+border-top:2px solid rgb(16, 13, 122);
+}
+.requirements h4.line span{
+  margin:-0.5em 0 0;
+padding-right: 0.5em;
+float:left;
+background:rgb(233, 233, 233);
+}
+
+.requirements h5{
+  font-weight: bold;
+  font-size: 120%;
+  margin: 2em 0;
+}
+
+.requirements table{
+  border: 2px rgba(230, 230, 230, 0.8) solid;
+  background-color: rgba(208, 208, 208, 0.3);
+}
+
+.requirements table tr{
+    border: 2px rgba(230, 230, 230, 0.8) solid;
+  padding: 1em;
+}
+
+.requirements table td{
+    width: 14em;
+    font-size: 110%;
+    padding: 0.75em 1em;
+    font-weight:bold;
+    background-color:rgba(154, 154, 154, 0.3);
+}
+
+.requirements th{
+  padding: 0.75em 1em;
+}
+
+/*
+* send-to
+*              */
+
+div.send-to-area{
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 3em;
+  margin: 3em auto;
+  background-color: rgba(166, 166, 166, 0.4);
+}
+
+
+.send-to h4{
+    position: relative;
+    margin: 0 0 1.5em;
+    padding: 0.8em 0 0.8em 1.5em;
+    font-size: 1.143em;
+    font-weight: bold;
+}
+
+.send-to h4:before{
+    content: "";
+    position: absolute;
+    background: rgb(73, 73, 73);
+    top: 50%;
+    left: 0.5em;
+    margin-top :-15px;
+    height: 30px;
+    width: 8px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+
+/*
+* qaa
+*      */
+
+.qaa-area{
+  background-color: rgb(233, 233, 233);
+}
+.qaa{
+  width: 90%;
+  margin:auto;
+  padding-bottom: 2em;
+}
+.qaa h3{
+  padding-top: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.qaa h4.line{
+  font-weight: bold;
+  margin-top:0.5em;
+  color: rgb(16, 13, 122);
+padding-bottom:0.5em;
+border-top:2px solid rgb(16, 13, 122);
+}
+.qaa h4.line span{
+  margin:-0.5em 0 0;
+padding-right: 0.5em;
+float:left;
+background:rgb(233, 233, 233);
+}
+
+.qaa h5{
+  font-weight: bold;
+  font-size: 120%;
+  margin: 2em 0;
+}
+
+.qaa-content{
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 120%;
+  padding: 1em 1em 1em 3em;
+}
+
+.qaa-content .q{
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.qaa-content .a{
+  padding: 0.5em;
+}
