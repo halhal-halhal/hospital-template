@@ -2,24 +2,24 @@
 /*  #Globalnav-area
 /* ==========================================*/
 header #globalnav-area {
-    width: 100%;
-    position: fixed;
-    top: 82px;
-    left: 0;
-    font-size: 120%;
-    height: 50px;
-    z-index: 900;
-    text-align: center;
-    background-color: white;
-    margin: 0 auto;
-    word-break: break-all;
+  width: 100%;
+  position: fixed;
+  top: 82px;
+  left: 0;
+  font-size: 120%;
+  height: 50px;
+  z-index: 900;
+  text-align: center;
+  background-color: white;
+  margin: 0 auto;
+  word-break: break-all;
 }
 
 #globalnav {
-    height: 50px;
-    width: 100%;
-    margin: 0.5em auto;
-    word-break: break-all;
+  height: 50px;
+  width: 100%;
+  margin: 0.5em auto;
+  word-break: break-all;
 }
 #globalnav ul{
   list-style-type: none;
@@ -34,6 +34,44 @@ header #globalnav-area {
   padding: 0.3em 1em;
   text-decoration: none;
 }
+
+#globalnav li.ln00-now *{
+  background-color: rgb(189, 189, 189);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln01-now *{
+  background-color: rgb(128, 208, 237);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln02-now *{
+  background-color: rgb(34, 25, 135);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln03-now *{
+  background-color: rgb(241, 66, 192);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln04-now *{
+  background-color: rgb(173, 218, 122);
+  color: white;
+  text-decoration: none;
+}
+
+#globalnav li.ln05-now *{
+  background-color: rgb(181, 142, 40);
+  color: white;
+  text-decoration: none;
+}
+
+
 
 #globalnav li.ln00:hover *{
   background-color: rgb(189, 189, 189);
@@ -75,24 +113,24 @@ header #globalnav-area {
 /*  #Localnav-area
 /* ==========================================*/
 header #localnav-area {
-    width: 100%;
-    position: fixed;
-    top: 132px;
-    font-size: 90%;
-    left: 0;
-    height: 45px;
-    z-index: 900;
-    text-align-last: center;
-    margin: 0  auto;
-    background-color: rgb(238, 234, 233);
-    word-break: break-all;
-  }
+  width: 100%;
+  position: fixed;
+  top: 132px;
+  font-size: 90%;
+  left: 0;
+  height: 45px;
+  z-index: 900;
+  text-align-last: center;
+  margin: 0  auto;
+  background-color: rgb(238, 234, 233);
+  word-break: break-all;
+}
 
 #localnav {
-    height: 45px;
-    width: 100%;
-    margin: 1em auto;
-    word-break: break-all;
+  height: 45px;
+  width: 100%;
+  margin: 1em auto;
+  word-break: break-all;
 }
 #localnav ul{
   list-style-type: none;
@@ -101,12 +139,20 @@ header #localnav-area {
 }
 
 #localnav li{
-  background-image:url("http://placehold.jp/cc9999/cc9999/16x16.png");
-  background-repeat:no-repeat;
-  background-position:0px 0px;
   display: inline;
-  padding: 0 1.3em;
+  margin-left: 2em;
+  border-left: inset 10px rgba(208, 142, 125, 0.8);
 }
+
+#localnav li:before{
+  display: inline-block;
+  content: "";
+  margin-left: -7px;
+  border: 5px solid transparent;
+  border-left: solid 5px rgb(255, 255, 255);
+}
+
+
 
 /**
 /*  indxbox
@@ -120,14 +166,21 @@ header #localnav-area {
   margin: 10px 0;
 }
 
-.indexbox img:hover{
+.index-menu div:hover{
   filter:alpha(opacity=50);
   opacity:0.5;
-  transition:0.75s ;
+  transition:0.75s;
+}
+a.index-menu{
+  width: 100%;
+  height: 100%;
+}
+a.index-menu:hover{
+  text-decoration: none;
 }
 
-.indexbox img {
-	transition-duration: 1.0s ;	/* 秒数 = 1.0秒 */
+.index-menu  div{
+  transition-duration: 1.0s ;	/* 秒数 = 1.0秒 */
 }
 
 
@@ -151,6 +204,19 @@ header #localnav-area {
   display: inline-block;
 }
 
+.topix-name{
+  font-size: 170%;
+  color: rgb(100, 100, 100);
+  margin-left: 1em;
+}
+
+.global-category{
+  color: blue;
+  padding: 4px 7px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
 /*
 * content-menu
 *         */
@@ -158,35 +224,34 @@ div.content-menu{
   margin: 0;
 }
 
-div.content-menu ul{
-  list-style-type: none;
-  float: left;
+div.content-menu table{
+  background-color: rgba(52, 86, 187, 0.8);
   width: 100%;
+  margin-top: 1em;
   height: 3em;
-  margin-bottom: 40px;
-  display: inline-block;
-  background-color: rgb(4, 4, 22);
+
 }
 
-.content-menu ul li{
-  float: left;
-  height: 3em;
+div.content-menu table th{
+  text-align: center;
   color: white;
-  margin-left: 0;
-  margin-right: 1px;
-background-color: rgb(22, 39, 97);
-  padding: 0.5em 2em;
-  display: block;
-    width: 16.4%;
+  margin: 3px;
+  border: solid 2px rgba(4, 4, 22, 0.4);
 }
-
+div.content-menu table th:hover{
+  text-align: center;
+  color: white;
+  background-color: rgba(24, 24, 132, 0.5);
+  margin: 3px;
+  border: solid 2px rgb(4, 4, 22);
+}
 
 /*
 *  message-area
 *       */
 div.message-area{
   background-color: rgb(233, 233, 233);
-  margin-top: 7em;
+  margin-top: 2em;
 
 }
 .message {
@@ -225,14 +290,14 @@ div.message-area{
   font-weight: bold;
   margin-top:0.5em;
   color: rgb(16, 13, 122);
-padding-bottom:0.5em;
-border-top:2px solid rgb(16, 13, 122);
+  padding-bottom:0.5em;
+  border-top:2px solid rgb(16, 13, 122);
 }
 .requirements h4.line span{
   margin:-0.5em 0 0;
-padding-right: 0.5em;
-float:left;
-background:rgb(233, 233, 233);
+  padding-right: 0.5em;
+  float:left;
+  background:rgb(233, 233, 233);
 }
 
 .requirements h5{
@@ -247,16 +312,16 @@ background:rgb(233, 233, 233);
 }
 
 .requirements table tr{
-    border: 2px rgba(230, 230, 230, 0.8) solid;
+  border: 2px rgba(230, 230, 230, 0.8) solid;
   padding: 1em;
 }
 
 .requirements table td{
-    width: 14em;
-    font-size: 110%;
-    padding: 0.75em 1em;
-    font-weight:bold;
-    background-color:rgba(154, 154, 154, 0.3);
+  width: 14em;
+  font-size: 110%;
+  padding: 0.75em 1em;
+  font-weight:bold;
+  background-color:rgba(154, 154, 154, 0.3);
 }
 
 .requirements th{
@@ -277,25 +342,25 @@ div.send-to-area{
 
 
 .send-to h4{
-    position: relative;
-    margin: 0 0 1.5em;
-    padding: 0.8em 0 0.8em 1.5em;
-    font-size: 1.143em;
-    font-weight: bold;
+  position: relative;
+  margin: 0 0 1.5em;
+  padding: 0.8em 0 0.8em 1.5em;
+  font-size: 1.143em;
+  font-weight: bold;
 }
 
 .send-to h4:before{
-    content: "";
-    position: absolute;
-    background: rgb(73, 73, 73);
-    top: 50%;
-    left: 0.5em;
-    margin-top :-15px;
-    height: 30px;
-    width: 8px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+  content: "";
+  position: absolute;
+  background: rgb(73, 73, 73);
+  top: 50%;
+  left: 0.5em;
+  margin-top :-15px;
+  height: 30px;
+  width: 8px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
 }
 
 
@@ -320,14 +385,14 @@ div.send-to-area{
   font-weight: bold;
   margin-top:0.5em;
   color: rgb(16, 13, 122);
-padding-bottom:0.5em;
-border-top:2px solid rgb(16, 13, 122);
+  padding-bottom:0.5em;
+  border-top:2px solid rgb(16, 13, 122);
 }
 .qaa h4.line span{
   margin:-0.5em 0 0;
-padding-right: 0.5em;
-float:left;
-background:rgb(233, 233, 233);
+  padding-right: 0.5em;
+  float:left;
+  background:rgb(233, 233, 233);
 }
 
 .qaa h5{
@@ -342,11 +407,47 @@ background:rgb(233, 233, 233);
   padding: 1em 1em 1em 3em;
 }
 
-.qaa-content .q{
-    font-weight: bold;
-    padding: 0.5em;
+.qaa-content span.q{
+  font-weight: bold;
+}
+
+.qaa-content .q:before{
+  content: "Q";
+  font-size: 1.5em;
+  color: rgb(239, 241, 254);
+  width: 1.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.1em;
+  position: absolute;
+  margin-left: -1.2em;
+  margin-top: -10px;
+  font-weight: lighter;
+  vertical-align: text-top;
+
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  background-color: rgb(50, 73, 153);
 }
 
 .qaa-content .a{
   padding: 0.5em;
+  margin-top: 1em;
+}
+
+.qaa-content .a:before{
+  content: "A";
+  font-size: 1.5em;
+  color: rgb(50, 73, 153);
+  width: 1.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.2em;
+  position: absolute;
+  margin-left: -1.5em;
+  margin-top: -10px;
+  font-weight: lighter;
+  vertical-align: text-top;
+
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  background-color: rgb(166, 175, 208);
 }
