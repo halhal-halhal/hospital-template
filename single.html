@@ -21,12 +21,72 @@
   <!-- Custom Fonts -->
   <script src="https://use.fontawesome.com/a3de6310f4.js"></script>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <!-- スクロール位置を取得しサイドナビを点灯 -->
+  <script type="text/javascript">
+  $(function() {
+    /**
+    * ページ内スクロール
+    */
+    $('a[href="#"]').click(function(){
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - 50;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+    });
+  });
+
+  $(function() {
+
+    /**
+    * 現在スクロール位置によるグローバルナビのアクティブ表示
+    */
+    var scrollMenu = function() {
+      // 配列宣言
+      // ここにスクロールで点灯させる箇所のidを記述する
+      // 数値は全て0でOK
+      var array = {
+        '#sidenav-message': 0,
+        '#sidenav-recruit': 0,
+        '#sidenav-qaa': 0
+      };
+
+      var $globalNavi = new Array();
+
+      // 各要素のスクロール値を保存
+      for (var key in array) {
+        if ($(key).offset()) {
+          array[key] = $(key).offset().top - 10; // 数値丁度だとずれるので10px余裕を作る
+          $globalNavi[key] = $('#sidenav ul li a[href="' + key + '"]');
+        }
+      }
+
+      // スクロールイベントで判定
+      $(window).scroll(function () {
+        for (var key in array) {
+          if ($(window).scrollTop() > array[key] - 50) {
+            $('#sidenav ul li a').each(function() {
+              $(this).removeClass('active');
+            });
+            $globalNavi[key].addClass('active');
+          }
+        }
+      });
+    }
+
+    // 実行
+    scrollMenu();
+  });
+  </script>
 
 </head>
 
@@ -111,7 +171,7 @@
   </section>
 
 
-
+    <div id="sidenav-message"></div>
   <!-- Page Content -->
   <div class="container">
     <div class="content-head">
@@ -153,6 +213,8 @@
         </p>
       </div>
     </div>
+
+        <div id="sidenav-recruit"></div>
     <div class="requirements-area">
       <div class="requirements">
         <h3>募集要項</h3>
@@ -233,7 +295,7 @@
         </div>
       </div>
 
-
+    <div id="sidenav-qaa"></div>
       <div class="qaa-area">
         <div class="qaa">
           <h3>Q&A</h3>
@@ -252,7 +314,14 @@
       </div>
 
       <hr>
-      <!-- Footer -->
+      <!-- sidenav-->
+      <div id="sidenav">
+        <ul>
+          <li><a href="#sidenav-message">メッセージ</a></li>
+          <li><a href="#sidenav-recruit">募集要項</a></li>
+          <li><a href="#sidenav-qaa">Q&A</a></li>
+        </ul>
+      </div>
       <!-- Footer -->
     </div>
     <footer>
@@ -378,6 +447,7 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>

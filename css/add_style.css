@@ -179,6 +179,25 @@ a.index-menu:hover{
   text-decoration: none;
 }
 
+.copy{
+  color: rgb(18, 23, 147);
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+.index-menu h2{
+  font-weight: bold;
+}
+.index-menu h2:before{
+  content: ">";
+  border: 1px black solid;
+  font-weight: lighter;
+  font-size: 50%;
+  margin: auto;
+  margin-right: 1em; 
+}
+
 .index-menu  div{
   transition-duration: 1.0s ;	/* 秒数 = 1.0秒 */
 }
@@ -450,4 +469,31 @@ div.send-to-area{
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   background-color: rgb(166, 175, 208);
+}
+
+
+/*
+* sidenav
+*         */
+
+#sidenav {
+	position: fixed;
+  top: 40%;
+  width: 11em;
+  right: 0;
+  font-size: 120%;
+}
+
+#sidenav li{
+    list-style-type: none;
+    height: 1.8em;
+    padding: 0.2em;
+  background: rgba(180, 180, 180, 0.2);
+  margin-bottom: 2em;
+}
+
+#sidenav a.active{
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+  font-size: 120%;
 }
