@@ -195,7 +195,7 @@ a.index-menu:hover{
   font-weight: lighter;
   font-size: 50%;
   margin: auto;
-  margin-right: 1em; 
+  margin-right: 1em;
 }
 
 .index-menu  div{
@@ -477,23 +477,54 @@ div.send-to-area{
 *         */
 
 #sidenav {
-	position: fixed;
+  position: fixed;
   top: 40%;
   width: 11em;
   right: 0;
-  font-size: 120%;
+  font-size: 110%;
+}
+
+#sidenav .active {
+  position: fixed;
+  width: 9em;
+  right: 0;
+  font-size: 110%;
 }
 
 #sidenav li{
-    list-style-type: none;
-    height: 1.8em;
-    padding: 0.2em;
-  background: rgba(180, 180, 180, 0.2);
+  list-style-type: none;
+  height: 1.8em;
+  padding: 0.2em;
+  color: rgba(50, 50, 50, 0.3);
   margin-bottom: 2em;
+  font-weight: bold;
 }
 
-#sidenav a.active{
+#sidenav a:before{
+  content: ">";
+  position: absolute;
+  right: 0;
+  height: 1.2em;
+  margin-top: 0.2em;
+  padding-right: 0.8em;
+  padding-left: 0.2em;
+  background-color: rgba(175, 175, 175, 0.7);
+}
+
+#sidenav a.active:before{
+  content: ">";
+  position: absolute;
+  right: 0;
+    color: rgba(255,255,255,0.9);
+  height: 1.2em;
+  margin-top: 0.2em;
+  padding-right: 1.5em;
+  padding-left: 0.2em;
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+
+
+#sidenav li a.active{
   color: rgb(50, 50, 50);
-  font-weight: bold;
-  font-size: 120%;
 }
