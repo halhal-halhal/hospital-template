@@ -192,14 +192,19 @@ a.index-menu:hover{
 
 .index-menu h2{
   font-weight: bold;
+  margin-left: 1em;
 }
 .index-menu h2:before{
-  content: ">";
-  border: 1px black solid;
-  font-weight: lighter;
-  font-size: 50%;
-  margin: auto;
-  margin-right: 1em;
+  content: ' ';
+  border: transparent solid 0.3em;
+  border-left-color: #000000;
+  position: absolute;
+  height: 0;
+  width: 0;
+  margin: 0px;
+  margin-top: 0.25em;
+  padding: 0px;
+  margin-left: -0.75em;
 }
 
 .index-menu  div{
