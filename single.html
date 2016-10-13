@@ -30,6 +30,19 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   <!-- スクロール位置を取得しサイドナビを点灯 -->
+
+  <script type="text/javascript">
+$(function(){
+	$('a[href^="#"]').click(function(){
+		var speed = 500;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top;
+		$("html, body").animate({scrollTop:position}, speed, "swing");
+		return false;
+	});
+});
+</script>
   <script type="text/javascript">
   $(function() {
     /**
@@ -91,6 +104,10 @@
 </head>
 
 <body>
+  <div id="top"></div>
+  <div id="top-button">
+    <a href="#top"><img src="http://placehold.it/56x56" alt="" /></a>
+  </div>
   <div id="sidenav-message"></div>
   <!-- Navigation -->
   <nav class="navbar navbar-fixed-top" id="header-nav" role="navigation">

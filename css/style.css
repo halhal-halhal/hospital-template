@@ -140,7 +140,7 @@ a:visited {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-    opacity: .9; 
+    opacity: .9;
 }
 @media(min-width:768px) {
     #header-nav > .container {
@@ -204,7 +204,7 @@ header.carousel .fill {
 }
 #news-area__inner ul {
     list-style: none;
-} 
+}
 #news-area__inner ul > li {
     margin: 0;
     line-height: 1em;
@@ -229,7 +229,7 @@ header.carousel .fill {
 }
 .icon_staff span {
     border: solid 2px #0093c4;
-    color: #0093c4; 
+    color: #0093c4;
 }
 .icon_trainee span {
     border: solid 2px #e59c21;

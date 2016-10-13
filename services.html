@@ -19,18 +19,34 @@
   <link href="css/add_style.css" rel="stylesheet">
   <!-- Custom Fonts -->
   <script src="https://use.fontawesome.com/a3de6310f4.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <script type="text/javascript">
+$(function(){
+	$('a[href^="#"]').click(function(){
+		var speed = 500;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top;
+		$("html, body").animate({scrollTop:position}, speed, "swing");
+		return false;
+	});
+});
+</script>
 
 </head>
-
+<div id="top"></div>
 <body>
-
+  <!-- to_top -->
+  <div id="top-button">
+    <a href="#top"><img src="http://placehold.it/56x56" alt="" /></a>
+  </div>
+  <!-- /to_top -->
   <!-- Navigation -->
   <nav class="navbar navbar-fixed-top" id="header-nav" role="navigation">
     <div class="container">
@@ -162,7 +178,7 @@
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <div class="row">
       <div class="indexbox">
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
@@ -173,7 +189,7 @@
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
@@ -185,7 +201,7 @@
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
@@ -197,7 +213,7 @@
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
@@ -209,19 +225,19 @@
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
                 受信者の健康状態を総合的に評価し<br>
                 改善に向けての指導・フォローを行う
               </div>
-              <h2>検診（婦人科･内視鏡･総合健診医）</h2>
+              <h2>検診<span style="font-size:90%;">(婦人科･内視鏡･総合健診医)</span></h2>
               <img src="http://placehold.jp/480x300.png" alt="" />
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
@@ -233,7 +249,7 @@
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
@@ -245,7 +261,7 @@
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
@@ -257,7 +273,7 @@
             </div>
           </div>
         </a>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-12">
           <a class="index-menu" href="#">
             <div>
               <div class="copy">
