@@ -145,15 +145,18 @@ header #localnav-area {
 #localnav li{
   display: inline;
   margin-left: 2em;
-  border-left: inset 10px rgba(208, 142, 125, 0.8);
+  height: 3px;
+  border-left: inset 10px rgba(58, 42, 55, 0.5);
 }
 
 #localnav li:before{
   display: inline-block;
+  position: absolute;
   content: "";
-  margin-left: -7px;
-  border: 5px solid transparent;
-  border-left: solid 5px rgb(255, 255, 255);
+  margin-top: 8px;
+  margin-left: -6px;
+  border: 3px solid transparent;
+  border-left: solid 3px rgb(255, 255, 255);
 }
 
 
