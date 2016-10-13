@@ -15,6 +15,10 @@ header #globalnav-area {
   word-break: break-all;
 }
 
+table *{
+  color: rgba(64,64,64,0.7);
+}
+
 #globalnav {
   height: 50px;
   width: 100%;
@@ -223,6 +227,53 @@ a.index-menu:hover{
   display: inline-block;
 }
 
+.content-head li.about-recruit{
+  padding: 1px 0.5em 1px 1.5em ;
+  border: 1px solid rgba(71, 78, 125, 0.7);
+  color: rgb(45, 46, 108);
+  background-color:  rgba(71, 78, 125, 0.2);
+}
+
+.content-head li.about-recruit a{
+  color: rgb(45, 46, 108);
+  font-weight: bold;
+}
+.content-head li.about-recruit a:hover{
+  color: rgb(45, 46, 108);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-head li.about-recruit:before{
+  content: ' ';
+border: transparent solid 0.3em;
+border-left-color: #000000;
+position: absolute;
+height: 0;
+width: 0;
+margin: 0px;
+margin-top: 0.55em;
+padding: 0px;
+margin-left: -0.75em;
+}
+
+.content-head .back{
+  border: 1px solid rgba(116, 116, 116, 0.73);
+  padding: 1px 0.5em;
+  color: rgb(68, 68, 68);
+}
+
+.content-head .back a{
+  color: rgb(68, 68, 68);
+  font-weight: bolder;
+}
+
+.content-head .back a:hover{
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .topix-name{
   font-size: 170%;
   color: rgb(100, 100, 100);
@@ -301,9 +352,26 @@ div.message-area{
   padding-bottom: 2em;
 }
 .requirements h3{
-  padding-top: 1em;
+  padding: 1.5em;
   width: 100%;
-  margin-bottom: 1em;
+  font-weight: bolder;
+}
+.requirements h3:before{
+  content:'>';
+  margin-top: 0.4em;
+  margin-left: -3em;
+  padding-top: 0.3em;
+  padding-left: 0.5em;
+	border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	height:1.8em;
+	width:1.8em;
+  font-size: 20%;
+  position: absolute;
+	display:inline-block;
+  color: rgba(255,255,255,0.9);
+	background-color: rgba(55, 55, 200, 0.8);
 }
 .requirements h4.line{
   font-weight: bold;
@@ -340,10 +408,11 @@ div.message-area{
   font-size: 110%;
   padding: 0.75em 1em;
   font-weight:bold;
-  background-color:rgba(154, 154, 154, 0.3);
+  background-color:rgba(255, 255, 255, 0.4);
 }
 
 .requirements th{
+    background-color: rgba(255, 255, 255, 0.8);
   padding: 0.75em 1em;
 }
 
@@ -356,13 +425,13 @@ div.send-to-area{
   padding: 1em;
   margin-bottom: 3em;
   margin: 3em auto;
-  background-color: rgba(166, 166, 166, 0.4);
+  background-color: rgba(166, 166, 166, 0.2);
 }
 
 
 .send-to h4{
   position: relative;
-  margin: 0 0 1.5em;
+  margin: 0 0 0.5em;
   padding: 0.8em 0 0.8em 1.5em;
   font-size: 1.143em;
   font-weight: bold;
@@ -371,7 +440,7 @@ div.send-to-area{
 .send-to h4:before{
   content: "";
   position: absolute;
-  background: rgb(73, 73, 73);
+  background: rgba(73, 73, 73, 0.7);
   top: 50%;
   left: 0.5em;
   margin-top :-15px;
@@ -396,9 +465,26 @@ div.send-to-area{
   padding-bottom: 2em;
 }
 .qaa h3{
-  padding-top: 1em;
+  padding: 1.5em;
   width: 100%;
-  margin-bottom: 1em;
+  font-weight: bolder;
+}
+.qaa h3:before{
+  content:'>';
+  margin-top: 0.75em;
+  margin-left: -3em;
+  padding-top: 0.3em;
+  padding-left: 0.5em;
+  border-radius:30px;
+  -webkit-border-radius:30px;
+  -moz-border-radius:30px;
+  height:1.8em;
+  width:1.8em;
+  font-size: 20%;
+  position: absolute;
+  display:inline-block;
+  color: rgba(255,255,255,0.9);
+  background-color: rgba(55, 55, 200, 0.8);
 }
 .qaa h4.line{
   font-weight: bold;
@@ -421,6 +507,8 @@ div.send-to-area{
 }
 
 .qaa-content{
+  margin-top: 2em;
+    border: 1px solid rgba(110, 110, 110, 0.64);
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 120%;
   padding: 1em 1em 1em 3em;
@@ -479,14 +567,14 @@ div.send-to-area{
 #sidenav {
   position: fixed;
   top: 40%;
-  width: 11em;
+  width: 10em;
   right: 0;
   font-size: 110%;
 }
 
 #sidenav .active {
   position: fixed;
-  width: 9em;
+  width: 8em;
   right: 0;
   font-size: 110%;
 }
