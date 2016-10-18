@@ -2,6 +2,33 @@ html,body{
   width: 100%;
 }
 
+@media(max-width:992px){
+  th {
+    position: relative;
+    padding: .75em 1em;
+    background-color: #f0f0f0;
+  }
+  th::before,
+  th::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border-style: solid;
+    border-color: transparent;
+  }
+  th::before {
+    left: 0;
+    border-width: 0 15px 15px 0;
+    border-right-color: #ccc;
+  }
+  th::after {
+    right: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 0;
+    border-top-color: #ccc;
+  }
+}
+
 /*
 *  mobile-menu
 *                    */
@@ -66,7 +93,7 @@ html,body{
 /**
 /*  #Globalnav-area
 /* ==========================================*/
-@media(max-width:992px) {
+@media screen and (max-width:992px) and (min-width:500px) {
   #global-nav > .container {
     position: relative;
   }
@@ -94,16 +121,55 @@ html,body{
     display: inline-block;
   }
   table#sp-globalnav tbody, tr{
-      width: 100%;
+    width: 100%;
   }
   table#sp-globalnav th{
     width: 49.5%;
     margin-bottom: 2px;
   }
- table#sp-globalnav tbody, #sp-globalnav tr, #sp-globalnav th, #sp-globalnav td {
-  display: inline-block;
-  text-align: center;
+  table#sp-globalnav tbody, #sp-globalnav tr, #sp-globalnav th, #sp-globalnav td {
+    display: inline-block;
+    text-align: center;
   }
+}
+  @media screen and (max-width:499px){
+    #global-nav > .container {
+      position: relative;
+    }
+    .globalnavbar-right__top {
+      position: absolute;
+      top: 15px;
+      right: 0;
+    }
+    .globalnavbar-right__bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    #globalnav-area *{
+      display: none;
+      margin-top: -20% !important;
+    }
+    div#globalnav-area{
+      display: none;
+      margin-top: -20% !important;
+    }
+    table#sp-globalnav{
+      margin-top: 30px;
+      width: 100%;
+      display: inline-block;
+    }
+    table#sp-globalnav tbody, tr{
+      width: 100%;
+    }
+    table#sp-globalnav th{
+      width: 100%;
+      margin-bottom: 2px;
+    }
+    table#sp-globalnav tbody, #sp-globalnav tr, #sp-globalnav th, #sp-globalnav td {
+      display: inline-block;
+      text-align: center;
+    }
 
 }
 @media(min-width:993px){
@@ -829,7 +895,7 @@ a.index-menu:hover{
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .content-menu table, tbody, tr, th, td {
-  display: inline-block;
+    display: inline-block;
   }
 
   div.content-menu{
@@ -843,8 +909,8 @@ a.index-menu:hover{
 
   div.content-menu table.content-table th{
     text-align: center;
-        background-color: rgba(52, 86, 187, 0.8);
-        margin-top: 2px;
+    background-color: rgba(52, 86, 187, 0.8);
+    margin-top: 2px;
     color: white;
     height: 3em;
     padding-top: 0.5em;
@@ -862,7 +928,7 @@ a.index-menu:hover{
 }
 @media screen and (max-width: 767px) {
   .content-menu table, tbody, tr, th, td {
-  display: block;
+    display: block;
   }
 
   div.content-menu{
@@ -892,30 +958,7 @@ a.index-menu:hover{
 
     border: solid 2px rgb(4, 4, 22);
   }
-  th {
-  	position: relative;
-  	padding: .75em 1em;
-  	background-color: #f0f0f0;
-  }
-  th::before,
-  th::after {
-  	content: '';
-  	position: absolute;
-  	top: 100%;
-  	border-style: solid;
-  	border-color: transparent;
-  }
-  th::before {
-  	left: 0;
-  	border-width: 0 15px 15px 0;
-  	border-right-color: #ccc;
-  }
-  th::after {
-  	right: 0;
-  	border-style: solid;
-  	border-width: 15px 15px 0 0;
-  	border-top-color: #ccc;
-  }
+
 }
 
 
@@ -1039,20 +1082,20 @@ div.message-area{
     display: block;
     text-align: center;
     width: 100%;
-      background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 0;
   }
   #require-table td {
     border-right: 1px solid rgba(79, 77, 71, 0.6);
     border-bottom: none;
-      background-color:rgba(255, 255, 255, 0.4);
+    background-color:rgba(255, 255, 255, 0.4);
     display: block;
     text-align: center;
     width: 100%;
     padding: 0;
   }
   #require-table li{
-padding: auto;
+    padding: auto;
     padding-top: 1em;
     list-style-type: none;
     text-align: center;
