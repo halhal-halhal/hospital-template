@@ -100,14 +100,33 @@
     scrollMenu();
   });
   </script>
-
+  <script>
+  $(function() {
+      var topBtn = $('#page-top');
+      topBtn.hide();
+      //スクロールが100に達したらボタン表示
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 10) {
+              topBtn.fadeIn();
+          } else {
+              topBtn.fadeOut();
+          }
+      });
+      //スクロールしてトップ
+      topBtn.click(function () {
+          $('body,html').animate({
+              scrollTop: 0
+          }, 500);
+          return false;
+      });
+  });
+  </script>
 </head>
 
 <body>
+  <p id="page-top"><a href="#wrap">TOPへ</a></p>
   <div id="top"></div>
-  <div id="top-button">
-    <a href="#top"><img src="http://placehold.it/56x56" alt="" /></a>
-  </div>
+
   <div id="sidenav-message"></div>
   <!-- Navigation -->
   <nav class="navbar navbar-fixed-top" id="header-nav" role="navigation">
@@ -310,13 +329,13 @@
                   </p>
                 </div>
               </div>
-              <div id="sidenav-qaa"></div>
+
             </div>
           </div>
         </div>
       </div>
 
-
+  <div id="sidenav-qaa"></div>
       <div class="qaa-area">
         <div class="qaa">
           <h3>Q&A</h3>
