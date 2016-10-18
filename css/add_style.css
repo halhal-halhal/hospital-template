@@ -82,9 +82,34 @@ html,body{
   }
   #globalnav-area *{
     display: none;
+    margin-top: -20% !important;
   }
+  div#globalnav-area{
+    display: none;
+    margin-top: -20% !important;
+  }
+  table#sp-globalnav{
+    margin-top: 30px;
+    width: 100%;
+    display: inline-block;
+  }
+  table#sp-globalnav tbody, tr{
+      width: 100%;
+  }
+  table#sp-globalnav th{
+    width: 49.5%;
+    margin-bottom: 2px;
+  }
+ table#sp-globalnav tbody, #sp-globalnav tr, #sp-globalnav th, #sp-globalnav td {
+  display: inline-block;
+  text-align: center;
+  }
+
 }
 @media(min-width:993px){
+  #sp-globalnav{
+    display: none;
+  }
   header #globalnav-area {
     width: 100%;
     position: fixed;
@@ -811,13 +836,12 @@ a.index-menu:hover{
     margin: 0;
   }
 
-  div.content-menu table{
-
+  div.content-menu table.content-table{
     width: auto;
     margin-top: 3em;
   }
 
-  div.content-menu table th{
+  div.content-menu table.content-table th{
     text-align: center;
         background-color: rgba(52, 86, 187, 0.8);
         margin-top: 2px;
@@ -845,13 +869,13 @@ a.index-menu:hover{
     margin: 0;
   }
 
-  div.content-menu table{
+  div.content-menu table.content-table{
     width: 100%;
     margin-top: 5em;
 
   }
 
-  div.content-menu table th{
+  div.content-menu table.content-table th{
     text-align: center;
     color: white;
     background-color: rgba(52, 86, 187, 0.8);
@@ -861,7 +885,7 @@ a.index-menu:hover{
     width: 100%
     border: solid 2px rgba(4, 4, 22, 0.4);
   }
-  div.content-menu table th:hover{
+  div.content-menu table.content-table th:hover{
     text-align: center;
     color: white;
     background-color: rgba(24, 24, 132, 0.8);
