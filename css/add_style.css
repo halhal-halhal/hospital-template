@@ -30,8 +30,13 @@ html,body{
     font-size: 150%;
     padding: 3px;
     background-color: rgba(154, 157, 155, 0.3);
-    top: 80px;
+    top: 30%;
+    height: 10em;
+    width: 1.8em;
     left: 0;
+  }
+  .navbar-right__top{
+    z-index: 990;
   }
   #news-area__btn{
     margin-top: -3em;
@@ -44,6 +49,12 @@ html,body{
     display: none;
   }
   #mobile-menu * {
+    display: none;
+  }
+  div#slide_menu{
+    display: none;
+  }
+  #slide_menu *{
     display: none;
   }
   #button{

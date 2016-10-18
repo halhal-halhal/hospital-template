@@ -102,23 +102,23 @@
   </script>
   <script>
   $(function() {
-      var topBtn = $('#page-top');
-      topBtn.hide();
-      //スクロールが100に達したらボタン表示
-      $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-              topBtn.fadeIn();
-          } else {
-              topBtn.fadeOut();
-          }
-      });
-      //スクロールしてトップ
-      topBtn.click(function () {
-          $('body,html').animate({
-              scrollTop: 0
-          }, 500);
-          return false;
-      });
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        topBtn.fadeIn();
+      } else {
+        topBtn.fadeOut();
+      }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 500);
+      return false;
+    });
   });
   </script>
   <script>
@@ -218,6 +218,17 @@
         <li><a href="#">トップページ</a></li>
         <li><a href="#">臨床研修医(初期・後期)</a></li>
         <li><a href="#">診療科医師</a></li>
+        <ul>
+          <li><a href="#">救急医・総合診療医</a></li>
+          <li><a href="#">集中治療医</a></li>
+          <li><a href="#">泌尿器科医</a></li>
+          <li><a href="#">麻酔科医</a></li>
+          <li><a href="#">病理診療医</a></li>
+          <li><a href="#">神経内科医</a></li>
+          <li><a href="#">総合健診医</a></li>
+          <li><a href="#">消化器内科医</a></li>
+          <li><a href="#">腫瘍内科医</a></li>
+        </ul>
         <li><a href="#">看護師</a></li>
         <li><a href="#">メディカルスタッフ</a></li>
         <li><a href="#">事務系スタッフ</a></li>
@@ -225,7 +236,7 @@
     </nav>
 
     <!--メニューを出すボタン-->
-    <button id="button"><i class="fa fa-bars"></i> Menu</button>
+    <button id="button"><i class="fa fa-bars"></i> M<br>E<br>N<br>U</button>
   </div>
 
   <!-- /mobile_menu -->
@@ -300,55 +311,55 @@
         <h4 class="line"><span>救急医・総合診療医募集</span></h4>
         <h5>採用条件</h5>
         <div id="require-table">
-        <table>
-          <tr>
-            <td>採用日</td><th>随時</th>
-          </tr>
-          <tr>
-            <td>職位</td><th>医員、主任医員 ※臨床経験年数に応じて設定します</th>
-          </tr>
-          <tr>
-            <td>給与</td><th>職位、経験年数に応じ設定します</th>
-          </tr>
-          <tr>
-            <td>保険</td><th>健康保険、厚生年金保険、雇用保険、労災保険、勤務医師責任賠償保険加入</th>
-          </tr>
-          <tr>
-            <td>宿舎の有無</td><th>有り (家賃の個人負担及び入寮条件有り、要相談)</th>
-          </tr>
-          <tr>
-            <td>福利厚生</td><th>職員食堂、レストラン、仮眠室、互助会、済生会グル-プ保険、メディカルフィットネスセンタ-(利用可)、各種保養施設、職員家族健康診断
-              学会・セミナー等の出張費は規定により支給有り 院内保育園有り<br>
-              *<a href="#">福利厚生はこちら</a></th>
+          <table>
+            <tr>
+              <td>採用日</td><th>随時</th>
             </tr>
             <tr>
-              <td>応募書類</td><th><ol>
-                <li>履歴書</li>
-                ダウンロード(excel)
-                <li>推薦書</li>
-                ダウンロード(Word)
-                <li>診療実績・研究実績証明書</li>
-                ダウンロード(Word)
-                <li>医師免許証(写し)</li>
-                <li>専門資格証書(写し)</li>
-              </ol>
-              を担当者宛にお送り下さい
-              ※1～3までは当院規定様式</th>
+              <td>職位</td><th>医員、主任医員 ※臨床経験年数に応じて設定します</th>
             </tr>
             <tr>
-              <td>応募締切日</td><th>随時</th>
+              <td>給与</td><th>職位、経験年数に応じ設定します</th>
             </tr>
             <tr>
-              <td>選考方法</td><th>面接試験 等</th>
+              <td>保険</td><th>健康保険、厚生年金保険、雇用保険、労災保険、勤務医師責任賠償保険加入</th>
             </tr>
             <tr>
-              <td>選考日</td><th>個別にご連絡します</th>
+              <td>宿舎の有無</td><th>有り (家賃の個人負担及び入寮条件有り、要相談)</th>
             </tr>
             <tr>
-              <td>その他</td><th>病院見学は随時受け付けています。まずは、メールにてご連絡ください。</th>
-            </tr>
-          </table>
-        </div>
+              <td>福利厚生</td><th>職員食堂、レストラン、仮眠室、互助会、済生会グル-プ保険、メディカルフィットネスセンタ-(利用可)、各種保養施設、職員家族健康診断
+                学会・セミナー等の出張費は規定により支給有り 院内保育園有り<br>
+                *<a href="#">福利厚生はこちら</a></th>
+              </tr>
+              <tr>
+                <td>応募書類</td><th><ol>
+                  <li>履歴書</li>
+                  ダウンロード(excel)
+                  <li>推薦書</li>
+                  ダウンロード(Word)
+                  <li>診療実績・研究実績証明書</li>
+                  ダウンロード(Word)
+                  <li>医師免許証(写し)</li>
+                  <li>専門資格証書(写し)</li>
+                </ol>
+                を担当者宛にお送り下さい
+                ※1～3までは当院規定様式</th>
+              </tr>
+              <tr>
+                <td>応募締切日</td><th>随時</th>
+              </tr>
+              <tr>
+                <td>選考方法</td><th>面接試験 等</th>
+              </tr>
+              <tr>
+                <td>選考日</td><th>個別にご連絡します</th>
+              </tr>
+              <tr>
+                <td>その他</td><th>病院見学は随時受け付けています。まずは、メールにてご連絡ください。</th>
+              </tr>
+            </table>
+          </div>
           <div class="send-to-area">
             <div class="row">
 
@@ -376,7 +387,7 @@
         </div>
       </div>
 
-  <div id="sidenav-qaa"></div>
+      <div id="sidenav-qaa"></div>
       <div class="qaa-area">
         <div class="qaa">
           <h3>Q&A</h3>
