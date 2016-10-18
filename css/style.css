@@ -14,8 +14,6 @@ Author URI: http://www.cajon.co.jp/
 html,
 body {
     height: 100%;
-    min-width: 100%;
-    overflow: hidden;
 }
 
 body {
