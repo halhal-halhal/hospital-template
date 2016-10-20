@@ -196,6 +196,7 @@ html,body{
   }
   section #content-top{
     width: 100%;
+    margin-top: 5em;
   }
 
   table *{
@@ -968,7 +969,7 @@ a.index-menu:hover{
 div.message-area{
   background-color: rgb(233, 233, 233);
   margin-top: 2em;
-
+  padding-bottom: 6em;
 }
 .message {
   width: 90%;

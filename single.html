@@ -121,28 +121,7 @@
     });
   });
   </script>
-  <script>
-  $(function(){
-    var menu = $('#slide_menu'), // スライドインするメニューを指定
-    menuBtn = $('#button'), // メニューボタンを指定
-    body = $(document.body),
-    menuWidth = menu.outerWidth();
-    // メニューボタンをクリックした時の動き
-    menuBtn.on('click', function(){
-      // body に open クラスを付与する
-      body.toggleClass('open');
-      if(body.hasClass('open')){
-        // open クラスが body についていたらメニューをスライドインする
-        body.animate({'left' : menuWidth }, 300);
-        menu.animate({'left' : 0 }, 300);
-      } else {
-        // open クラスが body についていなかったらスライドアウトする
-        menu.animate({'left' : -menuWidth }, 300);
-        body.animate({'left' : 0 }, 300);
-      }
-    });
-  });
-  </script>
+
 </head>
 
 <body>
@@ -267,7 +246,7 @@
     <div class="message-area">
       <div class="row">
         <div class="col-lg-12">
-          <img class="img-responsive" src="http://placehold.it/1200x400" alt="" >
+          <img class="img-responsive" src="images/救急.jpg" alt="" >
         </div>
       </div>
       <!-- /.row -->
