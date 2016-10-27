@@ -29,67 +29,6 @@ html,body{
   }
 }
 
-/*
-*  mobile-menu
-*                    */
-@media(max-width:992px){
-  body{
-    position: relative;
-    left: 0;
-    overflow-x: hidden;
-  }
-  #slide_menu li{
-    list-style-type: none;
-  }
-  #slide_menu{
-    position: fixed;
-    top: 0;
-    font-size: 1.2em;
-    padding-top: 12em;
-    left: -240px;
-    width: 240px;
-    height: 100%;
-    background: rgba(33,33,33, 0.1);
-  }
-  #button{
-    position:fixed;
-    z-index: 900;
-    font-size: 150%;
-    padding: 3px;
-    background-color: rgba(154, 157, 155, 0.3);
-    top: 30%;
-    height: 10em;
-    width: 1.8em;
-    left: 0;
-  }
-  .navbar-right__top{
-    z-index: 990;
-  }
-  #news-area__btn{
-    margin-top: -3em;
-    right: 0;
-    position: absolute;
-  }
-}
-@media(min-width:993px){
-  div#mobile-menu{
-    display: none;
-  }
-  #mobile-menu * {
-    display: none;
-  }
-  div#slide_menu{
-    display: none;
-  }
-  #slide_menu *{
-    display: none;
-  }
-  #button{
-    display: none;
-  }
-}
-
-
 /**
 /*  #Globalnav-area
 /* ==========================================*/
@@ -194,9 +133,9 @@ html,body{
     width: 100%;
     padding: auto;
   }
-  section #content-top{
+  section#content-top{
     width: 100%;
-    margin-top: 5em;
+    padding-top: 7em;
   }
 
   table *{
@@ -573,7 +512,7 @@ html,body{
 
   }
   th.ln05-now{
-    background: rgb(181, 142, 40);;
+    background: rgb(181, 142, 40);
     display: inline-block;
     position: relative;
     width: auto;
@@ -753,8 +692,32 @@ a.index-menu:hover{
   text-decoration: none;
 }
 
-.copy{
-  color: rgb(18, 23, 147);
+.copy_doctor{
+  color: rgb(34, 25, 135);
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+.copy_trainer{
+  color: rgb(128, 208, 237);
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+.copy_nurse{
+  color: rgb(241, 66, 192);
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+.copy_co_medical{
+  color: rgb(153, 198, 102);
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+.copy_staff{
+  color: rgb(181, 142, 40);
   font-weight: bold;
   line-height: 1.5em;
   font-size: 1.1em;
@@ -969,7 +932,7 @@ a.index-menu:hover{
 div.message-area{
   background-color: rgb(233, 233, 233);
   margin-top: 2em;
-  padding-bottom: 6em;
+  padding-bottom: 3em;
 }
 .message {
   width: 90%;
@@ -1345,4 +1308,140 @@ div.send-to-area{
 #page-top a:hover {
   text-decoration: none;
   background: #999;
+}
+
+
+
+
+.global-category-doctor{
+  color: blue;
+  padding: 4px 7px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+.global-category-trainer{
+  color: rgb(128, 208, 237);
+  padding: 4px 7px;
+  font-weight: bold;
+  border: 1px solid rgb(128, 208, 237);
+}
+.global-category-nurse{
+  color: rgb(241, 66, 192);
+  padding: 4px 7px;
+  font-weight: bold;
+  border: 1px solid rgb(241, 66, 192);
+}
+.global-category-co_medical{
+  color: rgb(153, 198, 102);
+  padding: 4px 7px;
+  font-weight: bold;
+  border: 1px solid rgb(153, 198, 102);
+}
+.global-category-staff{
+  color: rgb(181, 142, 40);
+  padding: 4px 7px;
+  font-weight: bold;
+  border: 1px solid rgb(181, 142, 40);
+}
+
+#wanted a:hover{
+  text-decoration: none;
+}
+
+table.news-table{
+  padding: 2em;
+}
+.news-table tr{
+  padding-top: 1.5em;
+  line-height: 3em;
+  padding-bottom: 1.5em;
+}
+.news-table th{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.news-table td{
+  color: rgba(30,30,30,0.9);
+  font-weight: bold;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+div#top-img{
+  background-image: url(http://placehold.jp/24/cc9999/993333/1000x500.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+}
+
+div#top-message{
+  background-color: rgba(13, 27, 126, 0.84);
+  color: white;
+  width: 20em;
+  margin-left: 15%;
+  height: 20em;
+  text-align: center;
+  padding-top: 2em;
+}
+#top-message h1{
+  font-size: 400%;
+  font-weight: bolder;
+}
+
+div.house-detail{
+  width: 90%;
+  background-image: url(http://placehold.jp/24/cc9999/993333/1000x500.png);
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 3em;
+  background-position: center;
+  height: 20em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-right: 40%;
+}
+
+.accordion {
+	min-width: 300px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.accordion .ac-content {
+	margin: 0 10px;
+}
+.accordion input {
+	display: none;
+}
+.accordion label {
+	display: block;
+	background: #9fb7d4;
+	cursor: pointer;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+}
+.accordion label:hover {
+	background: #ccc;
+}
+.accordion .ac-cont {
+	transition: 0.2s;
+	height: 0;
+	overflow: hidden;
+	background: #ddd;
+	padding: 0 10px;
+}
+.accordion input:checked + .ac-cont {
+	height: auto;
+	padding: 10px;
+}
+
+@media screen and (max-width:992px) and (min-width:500px) {
+  div.pc-site{
+    display: none;
+  }
+}
+@media screen and (min-width:993px) {
+  div.sp-site{
+    display: none;
+  }
 }
