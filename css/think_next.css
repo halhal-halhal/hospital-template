@@ -86,6 +86,7 @@ h4::before {
   color: white;
   text-align: center;
   padding: 3em;
+  margin-top: 3em;
 }
 
 .think-message{
@@ -96,4 +97,8 @@ h4::before {
 
 .think-next p{
   margin-bottom: 1em;
+}
+
+img#logo{
+  width: 178px;
 }
