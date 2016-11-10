@@ -40,7 +40,7 @@
       var speed = 500;
       var href= $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top;
+      var position = target.offset().top - 200;
       $("html, body").animate({scrollTop:position}, speed, "swing");
       return false;
     });
@@ -177,25 +177,33 @@
     <!-- Link Area -->
     <div class="link-area">
       <div class="row">
-        <div class="col-md-1"></div>
+        <div class="col-md-1 col-sm-0 col-xs-0"></div>
         <a href="#training" class="index-menu">
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-4 col-xs-6">
             <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
           </div>
         </a>
-        <div class="col-md-2">
-          <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
-        </div>
-        <div class="col-md-2">
-          <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
-        </div>
-        <div class="col-md-2">
-          <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
-        </div>
-        <div class="col-md-2">
-          <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
-        </div>
-        <div class="col-md-1"></div>
+        <a href="#shop1" class="index-menu">
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
+          </div>
+        </a>
+        <a href="#shop2" class="index-menu">
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
+          </div>
+        </a>
+        <a href="#shop3" class="index-menu">
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
+          </div>
+        </a>
+        <a href="#shop4" class="index-menu">
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <img src="http://placehold.jp/24/cc9999/993333/180x180.png"/>
+          </div>
+        </a>
+        <div class="col-md-1 col-sm-0 col-xs-0"></div>
       </div>
     </div>
     <!-- /Link Area -->
@@ -244,168 +252,244 @@
         </p>
         <p>
           個人情報の適正な利用と管理の徹底を図るとともに、法令を順守した健康管理を推進します。
-        </p>
+        </p><br>
         <h4>【主な業務内容】</h4>
-        <table width="100%" border="0">
-          <tr>
-            <th scope="col">事業内容</th>
-            <th scope="col">目的</th>
-          </tr>
-          <tr>
-            <td>職員の健康推進計画</td>
-            <td>職員健康診断の実施、精密検査受診フォロー、産業医との面談、臨床心理士との面談、職員への健康教育、疾病予防まで、一貫して計画的に実施・管理する。</td>
-          </tr>
-          <tr>
-            <td>職員の感染防止対策</td>
-            <td>抗体価の管理、ワクチン接種の実施・管理を一貫して行い、職員を感染から守るだけでなく、患者さんへの感染防止にもつなげる。</td>
-          </tr>
-          <tr>
-            <td>組織健康度</td>
-            <td>職員の健康に関するデータを用いて、組織の健康度の指標を作り、それを測ることで組織に必要な課題を把握し健康推進計画等に活かしていく。</td>
-          </tr>
-        </table>
-
-      </div>
-    </div>
-    <hr>
-  </div>
-  <!-- Footer -->
-
-  <footer>
-    <div class="container">
-      <div id="footer_inner">
-        <div class="row">
-          <div class="col-sm-4 col-md-4">
-            <dl>
-              <dt><a href="#">臨床研修医</a></dt>
-              <dd>
-                <ul>
-                  <li> <a href="#">初期臨床研修医</a></li>
-                </ul>
-                <ul>
-                  <li> <a href="#">後期臨床研修医</a></li>
-                </ul>
-              </dd>
-            </dl>
-            <!--./臨床研修医-->
-            <dl>
-              <dt><a href="#">診療科医師</a></dt>
-              <dd>
-                <ul>
-                  <li> <a href="#">救急医・総合診療医</a></li>
-                  <li> <a href="#">集中治療医</a></li>
-                  <li> <a href="#">泌尿器科医</a></li>
-                  <li> <a href="#">麻酔科医</a></li>
-                </ul>
-                <ul>
-                  <li> <a href="#">病理診断医</a></li>
-                  <li> <a href="#">精神内科医</a></li>
-                  <li> <a href="#">総合健診医</a></li>
-                  <li> <a href="#">消化器内科医</a></li>
-                  <li> <a href="#">腫瘍内科医</a></li>
-                </ul>
-              </dd>
-            </dl>
-            <!--./診療科医師-->
-            <dl>
-              <dt><a href="#">看護師</a></dt>
-              <dd>
-                <ul>
-                  <li> <a href="#">初期臨床研修医</a></li>
-                </ul>
-                <ul>
-                  <li> <a href="#">後期臨床研修医</a></li>
-                </ul>
-              </dd>
-            </dl>
-            <!--./看護師-->
-          </div>
-          <!--./col-->
-          <div class="col-sm-4 col-md-4">
-            <dl>
-              <dt><a href="#">メディカルスタッフ</a></dt>
-              <dd>
-                <ul>
-                  <li> <a href="#">薬剤師</a></li>
-                  <li> <a href="#">臨床検査技師</a></li>
-                  <li> <a href="#">言語聴覚士</a></li>
-                  <li> <a href="#">診療放射線技師</a></li>
-                  <li> <a href="#">臨床工学技師</a></li>
-                </ul>
-                <ul>
-                  <li> <a href="#">管理栄養士</a></li>
-                  <li> <a href="#">理学療法士</a></li>
-                  <li> <a href="#">作業療法士</a></li>
-                  <li> <a href="#">医療ソーシャルワーカー</a></li>
-                  <li> <a href="#">介護福祉士</a></li>
-                </ul>
-              </dd>
-            </dl>
-            <!--./メディカルスタッフ-->
-            <dl>
-              <dt><a href="#">事務系スタッフ</a></dt>
-              <dd>
-                <ul>
-                  <li> <a href="#">経営マネジメントスタッフ</a></li>
-                  <li> <a href="#">医療秘書</a></li>
-                </ul>
-                <ul>
-                  <li> <a href="#">その他スタッフ</a></li>
-                </ul>
-              </dd>
-            </dl>
-            <!--./事務系スタッフ-->
-          </div>
-          <!--./col-->
-          <div class="col-sm-4 col-md-4">
-            <p>採用に関するお問い合わせ先</p>
-            <h3>[人事室直通] <span>03-0000-0000</span></h3>
-            <p id="footer_btn"><a href="#">資料請求・お問い合わせ</a></p>
-            <p>社会福祉法人 恩賜財団 済生会熊本病院</p>
-            <address>〒861-4193 熊本市南区近見5丁目3番1号</address>
-          </div>
-          <!--./col-->
+        <div class="for-pcview">
+          <table width="100%" border="0">
+            <tr>
+              <th scope="col">事業内容</th>
+              <th scope="col">目的</th>
+            </tr>
+            <tr>
+              <td>職員の健康推進計画</td>
+              <td>職員健康診断の実施、精密検査受診フォロー、産業医との面談、臨床心理士との面談、職員への健康教育、疾病予防まで、一貫して計画的に実施・管理する。</td>
+            </tr>
+            <tr>
+              <td>職員の感染防止対策</td>
+              <td>抗体価の管理、ワクチン接種の実施・管理を一貫して行い、職員を感染から守るだけでなく、患者さんへの感染防止にもつなげる。</td>
+            </tr>
+            <tr>
+              <td>組織健康度</td>
+              <td>職員の健康に関するデータを用いて、組織の健康度の指標を作り、それを測ることで組織に必要な課題を把握し健康推進計画等に活かしていく。</td>
+            </tr>
+          </table>
         </div>
-        <!--./row-->
-      </div>
-      <!--./#footer_inner-->
-    </div>
-    <!--./container-->
-    <div id="footer_nav">
-      <div class="container-fluid">
-        <div class="row">
-          <ul id="footer_nav__inner">
-            <li><a href="#">トップページ</a></li>
-            <li><a href="#">求める人物像</a></li>
-            <li><a href="#">教育体制(人材育成)プログラム</a></li>
-            <li><a href="#">福利厚生</a></li>
-            <li><a href="#">採用説明会・病院見学について</a></li>
-          </ul>
+        <div class="for-spview">
+          <table width="100%">
+            <tr>
+              <th>職員の健康推進計画</th>
+              <td>職員健康診断の実施、精密検査受診フォロー、産業医との面談、臨床心理士との面談、
+                職員への健康教育、疾病予防まで、一貫して計画的に実施・管理する。</td>
+              </tr>
+              <tr>
+                <th>職員の感染防止対策</th>
+                <td>抗体価の管理、ワクチン接種の実施・管理を一貫して行い、職員を感染から守るだけでなく、
+                  患者さんへの感染防止にもつなげる。</td>
+                </tr>
+                <tr>
+                  <th>組織健康度</th>
+                  <td>職員の健康に関するデータを用いて、組織の健康度の指標を作り、
+                    それを測ることで組織に必要な課題を把握し健康推進計画等に活かしていく。</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="shop">
+                <div id="shop1"></div>
+                <h3>ローソン(LAWSON)済生会熊本病院店</h3>
+                <img src="http://placehold.jp/24/cc9999/993333/400x300.png"/>
+                <h4>～24時間営業で便利!～</h4>
+                <p>
+                  食料品・書籍・衛生材料などがそろったコンビニエンスストア(ローソン)があります。
+                  24時間営業なので、夜勤帯などでも利用可能です。
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="shop">
+                <div id="shop2"></div>
+                <h3>ベーカリー&カフェふわり</h3>
+                <img src="http://placehold.jp/24/cc9999/993333/400x300.png"/>
+                <h4>～焼きたてのパンが人気です～</h4>
+                <p>
+                  店内でつくる焼きたてのパンはおすすめです。コーヒーなどのドリンクとのセットメニューもあります。
+                </p>
+                <p>
+                  済生会熊本福祉センターに所属する知的障害を持つ方々が、支援スタッフと一緒にベーカリーで働いています。
+                </p>
+                <p>
+                  また、店内の商品は職員割引価格で購入可能です。
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="shop">
+                <div id="shop3"></div>
+                <h3>職員食堂</h3>
+                <img src="http://placehold.jp/24/cc9999/993333/400x300.png"/>
+                <h4>～日替わりで食事が楽しめます～</h4>
+                <p>
+                  毎日格安価格で食事ができる職員専用の食堂があります。日替わり定食は通常のメニューに加えより栄養バランスやカロリーに配慮したヘルシー定食、
+                </p>
+                <p>
+                  週替わり定食の3種類があり、その他にも麺類、カレー、おにぎりなど充実しています。
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div id="shop4"></div>
+              <div class="shop">
+                <h3>フィットネスセンター</h3>
+                <img src="http://placehold.jp/24/cc9999/993333/400x300.png"/>
+                <h4>～職員向け健康教室等も～</h4>
+                <p>
+                  エアロバイク・ウォーキングマシンなど、各種トレーニングマシンを揃えた施設です。平日は22時まで営業しているため、仕事終わりに汗を流すこともできます。
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr>
         </div>
-        <!--./row-->
+        <!-- Footer -->
+
+        <footer>
+          <div class="container">
+            <div id="footer_inner">
+              <div class="row">
+                <div class="col-sm-4 col-md-4">
+                  <dl>
+                    <dt><a href="#">臨床研修医</a></dt>
+                    <dd>
+                      <ul>
+                        <li> <a href="#">初期臨床研修医</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="#">後期臨床研修医</a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <!--./臨床研修医-->
+                  <dl>
+                    <dt><a href="#">診療科医師</a></dt>
+                    <dd>
+                      <ul>
+                        <li> <a href="#">救急医・総合診療医</a></li>
+                        <li> <a href="#">集中治療医</a></li>
+                        <li> <a href="#">泌尿器科医</a></li>
+                        <li> <a href="#">麻酔科医</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="#">病理診断医</a></li>
+                        <li> <a href="#">精神内科医</a></li>
+                        <li> <a href="#">総合健診医</a></li>
+                        <li> <a href="#">消化器内科医</a></li>
+                        <li> <a href="#">腫瘍内科医</a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <!--./診療科医師-->
+                  <dl>
+                    <dt><a href="#">看護師</a></dt>
+                    <dd>
+                      <ul>
+                        <li> <a href="#">初期臨床研修医</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="#">後期臨床研修医</a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <!--./看護師-->
+                </div>
+                <!--./col-->
+                <div class="col-sm-4 col-md-4">
+                  <dl>
+                    <dt><a href="#">メディカルスタッフ</a></dt>
+                    <dd>
+                      <ul>
+                        <li> <a href="#">薬剤師</a></li>
+                        <li> <a href="#">臨床検査技師</a></li>
+                        <li> <a href="#">言語聴覚士</a></li>
+                        <li> <a href="#">診療放射線技師</a></li>
+                        <li> <a href="#">臨床工学技師</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="#">管理栄養士</a></li>
+                        <li> <a href="#">理学療法士</a></li>
+                        <li> <a href="#">作業療法士</a></li>
+                        <li> <a href="#">医療ソーシャルワーカー</a></li>
+                        <li> <a href="#">介護福祉士</a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <!--./メディカルスタッフ-->
+                  <dl>
+                    <dt><a href="#">事務系スタッフ</a></dt>
+                    <dd>
+                      <ul>
+                        <li> <a href="#">経営マネジメントスタッフ</a></li>
+                        <li> <a href="#">医療秘書</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="#">その他スタッフ</a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <!--./事務系スタッフ-->
+                </div>
+                <!--./col-->
+                <div class="col-sm-4 col-md-4">
+                  <p>採用に関するお問い合わせ先</p>
+                  <h3>[人事室直通] <span>03-0000-0000</span></h3>
+                  <p id="footer_btn"><a href="#">資料請求・お問い合わせ</a></p>
+                  <p>社会福祉法人 恩賜財団 済生会熊本病院</p>
+                  <address>〒861-4193 熊本市南区近見5丁目3番1号</address>
+                </div>
+                <!--./col-->
+              </div>
+              <!--./row-->
+            </div>
+            <!--./#footer_inner-->
+          </div>
+          <!--./container-->
+          <div id="footer_nav">
+            <div class="container-fluid">
+              <div class="row">
+                <ul id="footer_nav__inner">
+                  <li><a href="#">トップページ</a></li>
+                  <li><a href="#">求める人物像</a></li>
+                  <li><a href="#">教育体制(人材育成)プログラム</a></li>
+                  <li><a href="#">福利厚生</a></li>
+                  <li><a href="#">採用説明会・病院見学について</a></li>
+                </ul>
+              </div>
+              <!--./row-->
+            </div>
+            <!--./#footer_nav-->
+          </div>
+          <p id="copy">©2016 HOSPITAL ALL RIGHT RESERVED.</p>
+        </footer>
+
       </div>
-      <!--./#footer_nav-->
-    </div>
-    <p id="copy">©2016 HOSPITAL ALL RIGHT RESERVED.</p>
-  </footer>
+      <!-- /.container -->
 
-</div>
-<!-- /.container -->
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+      <!-- Script to Activate the Carousel -->
+      <script>
+      $('.carousel').carousel({
+        interval: 5000 //changes the speed
+      })
+      </script>
 
-<!-- Script to Activate the Carousel -->
-<script>
-$('.carousel').carousel({
-  interval: 5000 //changes the speed
-})
-</script>
-
-</body>
+    </body>
 
 
-</html>
+    </html>
