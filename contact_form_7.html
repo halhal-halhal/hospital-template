@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--パンドラ-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!---->
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>RECRUIT - Subpage Template</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/benefits_css.css" rel="stylesheet">
+  <link href="css/add_style.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <script src="https://use.fontawesome.com/a3de6310f4.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+  $(function(){
+    $('a[href^="#"]').click(function(){
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - 200;
+      $("html, body").animate({scrollTop:position}, speed, "swing");
+      return false;
+    });
+  });
+  </script>
+
+  <script>
+  $(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        topBtn.fadeIn();
+      } else {
+        topBtn.fadeOut();
+      }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 500);
+      return false;
+    });
+  });
+  </script>
+</head>
+<body>
+
+
+<table border="1" class="contact-table">
+  <tr>
+    <th>お問い合わせ項目※</th><td>[radio* item "見学希望" "資料請求" "その他お問い合わせ"]</td>
+  </tr>
+  <tr>
+    <th>お問い合わせ職種※</th><td>[radio* kind "医師" "初期臨床研修医" "後期臨床研修医(レジデント)" "看護師" "コメディカルスタッフ" "事務系スタッフ"]
+      <br><font color="red">※「コメディカルスタッフ」と「事務系スタッフ」を選んだ方は、以下に職種名を記入して下さい。</font><br>
+      [textarea kind-detail]<br>例：臨床検査技師など</td>
+  </tr>
+  <tr>
+    <th>氏名※</th><td>[text* your-name]</td>
+  </tr>
+  <tr>
+    <th>フリガナ※</th><td>[text* your-kana-name]</td>
+  </tr>
+  <tr>
+    <th>施設名・学校名※</th><td>[text* your-from]</td>
+  </tr>
+  <tr>
+    <th>メールアドレス</th><td>[text your-name]<br>例）yamada@sk-kumamoto.jp</td>
+  </tr>
+  <tr>
+    <th>住所</th><td>[text address default:"（資料請求の場合は必須）"]</td>
+  </tr>
+  <tr>
+    <th>電話番号※</th><td>[text* tel]<br>例）096-351-8000</td>
+  </tr>
+  <tr>
+    <th>備考<br>(見学希望日時や質問事項など)</th><td>[text-area other]</td>
+  </tr>
+</table>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
+$('.carousel').carousel({
+  interval: 5000 //changes the speed
+})
+</script>
+
+</body>
+
+
+</html>

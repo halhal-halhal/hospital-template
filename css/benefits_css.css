@@ -40,3 +40,13 @@
   margin-top: 2em;
   background-color: #e0e0e0;
 }
+.contact-table{
+  padding: 2em;
+}
+.contact-table th{
+  background-color: rgb(117, 130, 118);
+  color: white;
+  border: rgba(255,255,255,0.5) 1px solid;
+  text-align: center;
+  padding: auto;
+}

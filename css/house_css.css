@@ -73,11 +73,10 @@ div.house-detail{
     display: none;
   }
   div.sp-site{
-    position: absolute;
-    left: 7.5%;
-    margin-top: 5%;
-    z-index: 6;
-    width: 85%;
+    background-color: #e0e0e0;
+    width: 90%;
+    margin: auto;
+    padding: 0.5em 1em;
   }
   div.house-detail{
     width: 90%;
@@ -93,6 +92,30 @@ div.house-detail{
   }
 }
 @media screen and (min-width:770px) and (max-width: 992px) {
+  div.pc-site{
+    display: none;
+  }
+  div.sp-site{
+    background-color: #e0e0e0;
+    width: 90%;
+    margin: auto;
+    padding: 0.5em 1em;
+  }
+  div.house-detail{
+    width: 90%;
+    background-image: url(http://placehold.jp/24/cc9999/993333/1000x500.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 3em;
+    background-position: center;
+    width: 90%;
+    
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+  }
+}
+@media screen and (min-width:993px) {
   div.sp-site{
     display: none;
   }
@@ -103,15 +126,10 @@ div.house-detail{
     margin: auto;
     margin-top: 3em;
     background-position: center;
-    height: 16em;
-    padding-left: 1em;
+    height: auto;
+    padding-left: 3em;
     padding-top: 0.5em;
-    padding-right: 1em;
-  }
-}
-@media screen and (min-width:993px) {
-  div.sp-site{
-    display: none;
+    padding-right: 40%;
   }
 }
 
